@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "npm run serve",
+    "serve": "webpack serve --progress --mode development",
+    "build": "webpack --progress --mode production"
   },
   "author": "",
   "license": "ISC",
@@ -14,6 +16,10 @@
     "react-router-dom": "^6.4.3"
   },
   "devDependencies": {
+    "@types/react": "^18.0.25",
+    "@types/react-dom": "^18.0.9",
+    "@types/react-router-dom": "^5.3.3",
+    "clean-webpack-plugin": "^4.0.0",
     "eslint": "^8.27.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.2.1",
